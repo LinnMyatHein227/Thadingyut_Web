@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poster</title>
+    <link rel="icon" type="image/x-icon" href="Image/Icon.png">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(95, 94, 94);
+            font-family: Arial, sans-serif;
+        }
+        nav{
+            background: goldenrod;
+            height: 60px;
+            line-height: 58px;
+            margin-bottom: 20px;
+            position: sticky;
+        }
+        nav ul{
+            display: flex;
+            list-style-type: none;
+        }
+        nav li{
+            font-size: 20px;
+            margin-left: 20px;
+            padding-left: 20px;
+            padding-right: 20px; 
+        }
+        nav a:hover{
+            padding: 3px;
+            transition-duration: 0.1s;
+            border-bottom: 2px solid gold;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+        }
+        .poster-frame {
+            text-align: center;
+            padding: 5px;
+        }
+        .poster-frame > img {
+            width: 50%;
+            height: 750px;
+            border: 1px solid gold;
+            box-shadow: 2px 0px 15px gold;
+            margin-bottom: 10px;
+        }
+        footer{
+            margin-top: 100px;
+            height: 50px;
+            background: goldenrod;
+        }
+        footer p{
+            line-height: 50px;
+            text-align: center;
+            color: black;
+        }
+        @media screen and (max-width:768px){
+            .poster-frame > img {
+                width: 75%;
+            }
+        }
+        @media screen and (max-width:500px){
+            .poster-frame > img {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="home"><a href="Thadinguyt.html">Home</a></li>
+            <li class="poster"><a href="Tadingyut_poster.html">Poster</a></li>
+            <li class="poem"><a href="Thadingyut_poem.html">Poem</a></li>
+        </ul>
+    </nav> 
+    <div class="poster-frame">
+        <img src="Image/1.png" alt="poster-1">
+        <img src="Image/2.png" alt="poster-2">
+        <img src="Image/3.png" alt="poster-3">
+        <img src="Image/4.png" alt="poster-4">
+        <img src="Image/5.png" alt="poster-5">
+    </div>
+    <footer>
+        <p>&copy;TAWGAWLI</p>
+    </footer>
+</body>
+</html>
